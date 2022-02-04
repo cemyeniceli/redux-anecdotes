@@ -1,13 +1,15 @@
 import React from 'react'
-import { useSelector, useDispatch } from 'react-redux'
-import { createAnecdote, voteForAnecdote } from './reducers/anecdoteReducer'
 import NewAnecdote from './components/NewAnecdote'
 import Anecdotes from './components/Anectodes'
+import Notification from './components/Notification'
+import Filter from './components/Filter'
 
 const App = () => {
 
   return (
     <div>
+      <Filter />
+      <Notification />
       <Anecdotes />
       <NewAnecdote/>
     </div>
